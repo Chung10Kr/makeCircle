@@ -1,0 +1,35 @@
+<% layout('layout') -%>
+
+
+<div class="board W100p H100p">
+    <img id="arm" class="W28p" 
+        src="/public/images/arm5.png">
+
+</div>
+
+<style>
+.board:hover > #arm
+{
+    transition : transform 4.8s;
+    transform-origin: top right;
+    transform: rotate(3600deg);
+    border-color: transparent transparent transparent #ffffff;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+
+}
+.board
+{
+    background-image: url("/public/images/backImg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#arm
+{
+    position: absolute;
+    top: 58%;
+    left: 21%;
+}
+</style>
